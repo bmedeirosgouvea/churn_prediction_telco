@@ -1,28 +1,48 @@
-# churn_prediction_telco
 # 📉 churn_prediction_telco
 
-Projeto de Machine Learning para previsão de **cancelamento de clientes (churn)** em uma operadora fictícia de telecomunicações.  
-Este projeto foi desenvolvido com foco em aplicações reais de **retenção de clientes**, tema essencial em setores de alta competitividade como o de telefonia móvel.
+Projeto de Machine Learning para previsão de **cancelamento de clientes (churn)** em uma operadora fictícia de telecom.
 
 ---
 
 ## 💡 Objetivo
 
-Desenvolver um modelo de classificação capaz de prever, com base em características de uso e pagamento, quais clientes estão mais propensos a cancelar seus serviços.  
-A intenção é oferecer uma base analítica que possa orientar **ações de retenção personalizadas** e **redução da taxa de churn**.
+Criar um modelo preditivo capaz de identificar clientes com maior probabilidade de cancelamento com base em dados de uso e comportamento.
 
 ---
 
 ## 🧠 Técnicas utilizadas
 
-- Manipulação de dados com **Pandas**
-- Codificação de variáveis categóricas (`get_dummies`)
-- Divisão de treino/teste com **Scikit-learn**
-- Classificação com **Random Forest**
-- Avaliação do modelo com **Classification Report**
-- Análise de importância das variáveis com **Matplotlib**
+- Manipulação de dados com **pandas**
+- Codificação de variáveis categóricas
+- Modelo de classificação com **Random Forest**
+- Avaliação com **classification report**
+- Visualização da importância das variáveis com **matplotlib**
 
 ---
 
-## 🗂️ Estrutura do projeto
+## ▶️ Como executar
 
+```bash
+pip install -r requisitos.txt
+python churn_model.py
+```
+
+O modelo será treinado e o gráfico de variáveis mais importantes será salvo na pasta `imagens`.
+
+---
+
+## 📊 Exemplo de colunas no dataset
+
+- `plano`: tipo de plano contratado (Pré, Pós, Controle)
+- `minutos`: total de minutos usados no mês
+- `internet_GB`: uso de dados móveis
+- `valor_fatura`: valor da fatura em reais
+- `atraso_pagamento`: 1 se atrasou pagamento, 0 caso contrário
+- `cancelou`: 1 se o cliente cancelou, 0 se está ativo
+
+---
+
+## 🙋‍♂️ Autor
+
+Bruna Gouvêa  
+🔗 [https://www.linkedin.com/in/bmedeirosgouvea/](https://www.linkedin.com/in/bmedeirosgouvea/)
